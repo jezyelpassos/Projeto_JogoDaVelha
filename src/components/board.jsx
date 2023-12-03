@@ -1,15 +1,21 @@
 import { useState } from "react"
 import Square from "./Squares"
 
-export default function Board() {
+export default function App() {
     const [square, setSquare] = useState(Array(9).fill(null))
+    const [xnext, setXnext] = useState(true)//definimos como true para que quando for marcado seja renderizado o X que é o que começa
 
     function handleClick (i) {
         const nextSquares = square.slice()
-        nextSquares[i] = "X"
+        if(xnext) {
+            nextSquares[i] = "X"
+        } else {
+            nextSquares[i] = "O" 
+        }
         setSquare(nextSquares)
+        setXnext(!xnext)
     }
-
+    
     return (
         <>
             <div className="board-row">
@@ -30,3 +36,5 @@ export default function Board() {
         </>
     )
 }
+
+

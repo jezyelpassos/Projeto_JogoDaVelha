@@ -11,8 +11,10 @@
 
 body {
   font-family: sans-serif;
-  margin: 20px;
   padding: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 h1 {
@@ -59,7 +61,7 @@ ul {
 
 body {
   font-family: sans-serif;
-  margin: 20px;
+  height: 100vh;
   padding: 0;
 }
 
