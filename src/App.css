@@ -12,9 +12,13 @@
 body {
   font-family: sans-serif;
   padding: 0;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   display: flex;
+  background-image: url('/src/assets/yellow.jpg');
+  background-size: cover; /* Para ajustar o tamanho da imagem */
+  background-position: center; /* Para posicionar a imagem */
 }
 
 h1 {
@@ -59,25 +63,20 @@ ul {
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  height: 100vh;
-  padding: 0;
-}
 
 .square {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 70px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 100px;
 }
 
 .board-row:after {
